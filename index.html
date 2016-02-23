@@ -28,7 +28,13 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <ul class="nav nav-tabs" role="tablist" id="myTabs-main">
+            <li role="presentation" class="active"><a href="#course-project" aria-controls="course-project" role="tab" data-toggle="tab">Course Project</a></li>
+            <li role="presentation"><a href="#paper-summary" aria-controls="paper-summary" role="tab" data-toggle="tab">Paper Summary</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="course-project">
+      <!-- <section id="main_content" class="inner"> -->
         <p><strong>Timeline</strong></p>
         <p><strong>Feb 23</strong>: Paper <a href="./files/paper.pdf">Dissecting cancer heterogeneity with a probabilistic genotype-phenotype model</a> selected to discuss within the group.</p>
         <p><strong>Feb 9</strong>: Datasets <a href="http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000425.v1.p1">Dataset-1: GCD</a> and <a href="http://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000092.v1.p1">SAGE</a> are selected and analyzed.</p>
@@ -36,7 +42,9 @@
         <h3>
           <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Team Members.
         </h3>
+        </div>
         
+        <div role="tabpanel" class="tab-pane fade" id="paper-summary">
         <p><a href="https://github.com/danzhao22">Dan Zhao</a> (danzhao3117@gmail.com) and <a href="https://github.com/jwzhanggy">Jiawei Zhang</a> (jwzhanggy@gmail.com)</p>
         
         <h3>
@@ -67,7 +75,9 @@
         <p>Sample quality control including removing related individuals, misidentified individuals, as well as individuals with genotype failure rate of 0.02. After sample quality control, the number of GCD samples reduced from 2379 to 1828, the number of SAGE samples reduced from 2668 to 1840.  ( Table 1.). </p>
         <img src="./images/table_1.png" alt="Table_1" style="width:700px;height:250px;">
         <p>For SNP quality control, SNPs with allele frequency > 1% were analyzed. A SNP call rate of 98% was required. Hardy–Weinberg equilibrium (HWE) was tested, and SNPs that deviated from HWE (P < 10−6) were excluded. After SNP quality control, the SNP number in GCD samples is 805782; the SNP number in SAGE samples is 845871.</p>
-      </section>
+      <!-- </section> -->
+      </div>
+    </div>
     </div>
     <!--
     <div id="main_content_wrap" class="outer">
